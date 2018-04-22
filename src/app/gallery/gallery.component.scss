@@ -1,0 +1,24 @@
+.fa-paw {
+  -webkit-filter: hue-rotate(180deg);
+  filter:hue-rotate(180deg);
+}
+
+.gallery-body {
+  padding-bottom: 50px;
+}
+
+.carousel {
+  max-width: 800px;
+  margin: auto;
+}
+
+.carousel-caption {
+  h3 {
+    color: white !important;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    color: white !important;
+  }
+}

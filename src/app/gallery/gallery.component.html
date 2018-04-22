@@ -1,0 +1,40 @@
+<div class="page-header gallery-header">
+  <h1><i class="fa fa-paw" aria-hidden="true"></i></h1>
+  <h1>Gallery</h1>
+  <h3>PHOTOS FROM OUR SALON</h3>
+</div>
+
+
+<div class="gallery-body">
+  <p>
+    Sed vestibulum odio ligula, ut rutrum ligula porta nec.
+    Donec blandit viverra odio, quis ullamcorper lectus imperdiet a.
+    Fusce ut nulla et mauris mattis ullamcorper. Suspendisse sit amet vulputate nunc, vitae laoreet est.
+    Praesent condimentum sapien id ex commodo malesuada. Morbi sit amet velit tincidunt tortor dignissim dictum eget at orci.
+    In hac habitasse platea dictumst. Fusce sed cursus est.
+  </p>
+</div>
+
+<ngb-carousel *ngIf="images">
+  <ng-template ngbSlide>
+    <img [src]="images[0]" alt="Random first slide">
+    <div class="carousel-caption">
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img [src]="images[1]" alt="Random second slide">
+    <div class="carousel-caption">
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img [src]="images[2]" alt="Random third slide">
+    <div class="carousel-caption">
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+  </ng-template>
+</ngb-carousel>

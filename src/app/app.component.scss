@@ -1,0 +1,42 @@
+.page-wrapper {
+  min-height: 100vh;
+}
+
+
+.page-body {
+
+  padding: 50px;
+
+  height: 100%;
+
+
+  background-color: white;
+}
+
+.footer-wrap {
+  height: 75px;
+  background-color: white;
+  border-top: 1px solid lightgrey;
+  text-align: center;
+  color: darkgray;
+
+}
+
+.footer-wrap span {
+  position: relative;
+  top: 35%;
+}
+
+@media screen and (min-width: 400px) {
+  body {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .page-body {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}

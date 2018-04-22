@@ -1,0 +1,159 @@
+
+
+
+
+.navbar-bottom {
+  padding-top: 0px;
+}
+
+.navbar-brand {
+  padding-left: 8px;
+}
+
+.nav-item-details {
+  margin-left: 100px;
+}
+
+.nav-detail-header {
+  padding: 0px 5px;
+
+  color: darkblue !important;
+
+  font-size: 16px;
+}
+
+.nav-detail-value {
+  padding: 0px 5px;
+
+  color: limegreen !important;
+
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+
+  margin-top: -1px;
+}
+
+
+
+.nav-link-bottom {
+  padding-top: 14px;
+  font-size: 18px;
+}
+
+.fa-stack {
+  color: #648398;
+}
+
+.hr-page-wrapper {
+  background-image: url(../../assets/food.png);
+
+  padding: 50px;
+
+  font-size: 42px;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.hr-page-wrapper-about {
+  -webkit-filter: hue-rotate(0deg);
+  filter:hue-rotate(0deg);
+}
+
+.hr-page-wrapper-services {
+  -webkit-filter: hue-rotate(90deg);
+  filter:hue-rotate(90deg);
+}
+
+.hr-page-wrapper-gallery {
+  -webkit-filter: hue-rotate(180deg);
+  filter:hue-rotate(180deg);
+}
+
+.hr-page-wrapper-contact {
+  -webkit-filter: hue-rotate(270deg);
+  filter:hue-rotate(270deg);
+}
+
+
+
+@media screen and (min-width: 400px) {
+  .navbar {
+    padding: 5px;
+    background-color: white !important;
+  }
+
+  .navbar-top {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .nav-link.active {
+    border-top: none;
+    color: inherit;
+  }
+
+  .navbar-collapse .ml-auto {
+    display: none;
+    visibility: hidden;
+  }
+
+
+  .navbar-top {
+    a {
+      margin: 0 auto;
+    }
+    text-align: center;
+    .navbar-nav {
+      visibility: hidden;
+      display: none;
+
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: white !important;
+  }
+
+  .navbar-top {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .navbar-collapse .ml-auto {
+    display: inherit;
+    visibility: visible;
+  }
+
+
+
+  .nav-link.active {
+    border-top: 3px solid orange;
+    color: orange !important;
+    margin-top: -5px;
+  }
+
+
+  .navbar-top {
+
+    text-align: left;
+    .navbar-nav {
+      visibility: visible;
+      display: flex;
+    }
+  }
+}
+

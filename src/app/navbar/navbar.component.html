@@ -1,0 +1,71 @@
+<nav class="navbar navbar-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Doggy Stylez Grooming Logo</a>
+  <ul class="navbar-nav navbar-details ml-auto">
+    <li class="nav-item nav-item-details">
+      <a class="nav-link nav-detail-header">Call Today:</a>
+      <a class="nav-link nav-detail-value">(585) 610-5415</a>
+    </li>
+    <li class="nav-item nav-item-details">
+      <a class="nav-link nav-detail-header">Our Location:</a>
+      <a class="nav-link nav-detail-value">
+        2703 Pine Grove Rd
+        Wirt, NY
+      </a>
+    </li>
+    <li class="nav-item nav-item-details">
+      <a class="nav-link nav-detail-header">Open Hours:</a>
+      <a class="nav-link nav-detail-value">Mon-Sat 8am-6pm</a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" (click)="toggleCollapsed()" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link nav-link-bottom" (click)="toggleCollapsed()"  routerLink="/about" routerLinkActive="active">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-bottom" (click)="toggleCollapsed()"  routerLink="/services" routerLinkActive="active">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-bottom" (click)="toggleCollapsed()"  routerLink="/gallery" routerLinkActive="active">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-bottom" (click)="toggleCollapsed()"  routerLink="/contact" routerLinkActive="active">Contact</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link nav-link-bottom">
+           <span class="fa-stack fa">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x"></i>
+          </span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-bottom">
+           <span class="fa-stack fa">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x"></i>
+          </span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-bottom">
+           <span class="fa-stack fa">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-google fa-stack-1x"></i>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="hr-page-wrapper hr-page-wrapper-{{activePageClass}}">
+  {{activePage}}
+</div>

@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/bootstrap';
+
+$fa-font-path : '~font-awesome/fonts';
+@import '~font-awesome/scss/font-awesome';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900');
+
+.page-header {
+  h1 {
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .fa-paw {
+    color: #ffcb0c;
+  }
+
+  margin-bottom: 50px;
+
+}
+
+h1 {
+  color: #313d7a ;
+}
+
+h3 {
+  color: #4b527a !important;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #5f657a !important;
+}
+
+ul {
+  font-family: 'Roboto', sans-serif;
+  color: #5f657a !important;
+}
+
+
+
+
+
+
